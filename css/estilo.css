@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+   
+h1{
+color: #ffb703;
+
+background-color: #ffb703;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img/salanatalina.jpg'); 
+    background-size: cover;                  
+    background-position: center;              
+    background-repeat: no-repeat;
+}
+.arvore {
+    font-size: 5rem;
+    animation: balancar 2s ease-in-out infinite alternate;
+}
+.estrela {
+    font-size: 2.5rem;
+    color: #ffb703; 
+    animation: girar 4s linear infinite, 
+               brilhar 1s infinite alternate;
+}
+.texto{
+    font-size: 3rem;
+    color: black; 
+    margin: 10px;
+    animation: surgir 2s ease-out, 
+               pulsar 1.5s infinite alternate;
+}
+@keyframes surgir {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulsar {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes brilhar {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+
+@keyframes balancar {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(5deg); }
+}
